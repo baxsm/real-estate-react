@@ -1,11 +1,10 @@
 header {
     background-color: #fff;
-    height: 10vh;
     box-shadow: 0 5px 30px rgba(0, 22, 84, 10%);
     padding: 15px 0;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 999999999;
 }
 
 header img {
@@ -41,13 +40,20 @@ header .toggle {
     display: none;
 }
 
+header .toggle button {
+    padding: 15px 30px;
+    width: 80px;
+}
+
+@media screen and (max-width: 1024px){
+    .btn1 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         padding: 0;
-    }
-
-    header img {
-        margin-top: 30px;
     }
 
     header .button {
@@ -60,12 +66,11 @@ header .toggle {
 
     header .toggle {
         display: block;
-        margin-top: 20px;
     }
 
     header .small {
         position: absolute;
-        top: 10vh;
+        top: 7vh;
         left: 0;
         width: 100%;
         background-color: #27ae60;
@@ -80,5 +85,15 @@ header .toggle {
 
     header a:hover {
         color: #ebebeb;
+    }
+
+    header .container {
+        padding: 15px;
+    }
+
+    header .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

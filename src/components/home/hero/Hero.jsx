@@ -28,7 +28,7 @@ export default function Hero() {
                             <h4>Advance Fliter</h4>
                         </div>
                         <button className="btn">
-                            <i className="fa fa-search"></i>
+                            <i className="fa fa-search" style={{marginRight: 0}}></i>
                         </button>
                     </form>
                 </div>

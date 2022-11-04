@@ -74,6 +74,12 @@
     margin: 5px;
 }
 
+.team button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .team .button {
     margin-top: 20px;
 }

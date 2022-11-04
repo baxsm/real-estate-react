@@ -29,7 +29,7 @@ export default function Header() {
                             nav.map((item, index) => {
                                 return (
                                     <li key={index}>
-                                        <Link to={item.path}>{item.text}</Link>
+                                        <Link to={item.path} onClick={toggleNavList}>{item.text}</Link>
                                     </li>
                                 )
                             })
@@ -37,9 +37,6 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="button flex">
-                    <h4>
-                        <span>2</span> My List
-                    </h4>
                     <button className="btn1">
                         <i className="fa fa-sign-out"></i>
                         Sign In
