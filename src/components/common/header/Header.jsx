@@ -16,6 +16,12 @@ export default function Header() {
         }
     }
 
+    const closeNavList = () => {
+        if(navList) {
+            setNavList(false)
+        }
+    }
+
   return (
     <>
         <header>
@@ -29,7 +35,7 @@ export default function Header() {
                             nav.map((item, index) => {
                                 return (
                                     <li key={index}>
-                                        <Link to={item.path} onClick={toggleNavList}>{item.text}</Link>
+                                        <Link to={item.path} onClick={closeNavList}>{item.text}</Link>
                                     </li>
                                 )
                             })
